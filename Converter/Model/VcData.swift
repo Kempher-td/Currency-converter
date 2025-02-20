@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+struct ExchangeRatesResponse: Decodable {
+    
+    let success: Bool?
+    let rates: [String: Double]
+    let base: String?
+    let date: String
+    
+}
+
+
